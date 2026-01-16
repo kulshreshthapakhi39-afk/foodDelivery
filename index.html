@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FoodieExpress</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Foodie Express</title>
     </head>
-
     <body>
         <header>
-            <h1>FoodieExpress</h1>
+            <h1>FOODIE EXPRESS</h1>
             <nav>
                 <a href="index.html">Home</a>
+                <a href="#menu">Menu</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
-        <section class="hero">
-            <h2>Delicious Food, Delivery Fast</h2>
-            <p>Order Your favourite food anytime, anywhere</p>
-        </section>
 
-        <section class="menu-page">
-            <h2 class="menu-title">Restaurant Menu</h2>
-            <div class="menu-layout">
-
-                <!--LEFT IMAGES-->
-                <div class="menu-images">
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-conatiner">
+                <div class="menu-card">
                     <img src="images/Dosa.jpeg">
-                    <img src="images/Noodles.jpeg">
-                    <img src="images/Burger.jpeg">
-                    <img src="images/Coffee.jpeg">
+                    <h3>Plain Dosa</h3>
+                    <p>₹120</p>
+                    <button onclick="orderFood('Plain Dosa')">Order Now</button>
                 </div>
-                <!--MENU LIST-->
-                <div class="menu-list">
-                    <div class="menu-group">
-                        <P><span>Plain Dosa</span><span class="dots"></span><span>₹70</span></P>
-                        <P><span>Masala Dosa</span><span class="dots"></span><span>₹90</span></P>
-                        <P><span>sambar Vada</span><span class="dots"></span><span>₹80</span></P>
-                        <P><span>Idli Sambar</span><span class="dots"></span><span>₹60</span></P>
-                        <P><span>Chole Bhature</span><span class="dots"></span><span>₹70</span></P>
-                    </div>
-                    <div class="menu-group">
-                        <P><span>Noodles</span><span class="dots"></span><span>₹50</span></P>
-                        <P><span>Pizza</span><span class="dots"></span><span>₹150</span></P>
-                        <P><span>Burger</span><span class="dots"></span><span>₹90</span></P>
-                        <P><span>Pasta</span><span class="dots"></span><span>₹50</span></P>
-                        <P><span>French Fries</span><span class="dots"></span><span>₹60</span></P>
-                        <P><span>Momos</span><span class="dots"></span><span>₹80</span></P>
-                    </div>
-                    <div class="menu-group">
-                        <P><span>Cold Coffee</span><span class="dots"></span><span>₹90</span></P>
-                        <P><span>MilkShake</span><span class="dots"></span><span>₹50</span></P>
-                        <P><span>Ice Tea</span><span class="dots"></span><span>₹50</span></P>
-                        <P><span>Hot Tea</span><span class="dots"></span><span>₹60</span></P>
-                    </div>
+
+                <div class="menu-card">
+                    <h3>Masala Dosa</h3>
+                    <p>₹150</p>
+                    <button onclick="orderFood('Masala Dosa')">Order Now</button>
                 </div>
-                
-                <!--RIGHT IMAGES-->
-                <div class="menu-images">
-                    <img src="images/Momos.jpeg">
+                <div class="menu-conatiner">
+                <div class="menu-card">
+                    <h3>Idli Sambhar</h3>
+                    <p>₹140</p>
+                    <button onclick="orderFood('Idli Sambhar')">Order Now</button>
+                </div>
+
+                <div class="menu-conatiner">
+                <div class="menu-card">
                     <img src="images/Pizza.jpeg">
-                    <img src="images/Fries.jpeg">
-                    <img src="images/Juice.jpeg">
-                    <img src="images/IceCream.jpeg">
+                    <h3>Veg Pizza</h3>
+                    <p>₹299</p>
+                    <button onclick="orderFood('Veg Pizza')">Order Now</button>
+                </div>
+
+                <div class="menu-conatiner">
+                <div class="menu-card">
+                    <img src="images/Burger.jpeg">
+                    <h3>Cheese Burger</h3>
+                    <p>₹149</p>
+                    <button onclick="orderFood('Cheese Burger')">Order Now</button>
+                </div>
+                <div class="menu-conatiner">
+                <div class="menu-card">
+                    <img src="images/Momos.jpeg">
+                    <h3>Momos</h3>
+                    <p>₹130</p>
+                    <button onclick="orderFood('Momos')">Order Now</button>
+                </div>
+                <div class="menu-conatiner">
+                <div class="menu-card">
+                    <img src="images/Noodles.jpeg">
+                    <h3>Noodles</h3>
+                    <p>₹160</p>
+                    <button onclick="orderFood('Noodles')">Order Now</button>
+                </div>
+
+                <div class="menu-conatiner">
+                <div class="menu-card">
+                    <img src="images/Coffee.jpeg">
+                    <h3>Cold Coffee</h3>
+                    <p>₹80</p>
+                    <button onclick="orderFood('cold Coffee')">Order Now</button>
                 </div>
             </div>
         </section>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+
+            <textarea id="review Text" placeholder="write Your Feedback...."></textarea>
+            <button onclick="addReview()">Submit</button>
+            <ul id="review list"></ul>
+        </section>
+
+        <footer>
+            <p>@2026 Foodie Express | All Rights Reserved</p>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
