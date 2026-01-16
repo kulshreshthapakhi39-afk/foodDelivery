@@ -1,75 +1,72 @@
-body{
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f8f8f8;
+    background: #f9f9f9;
 }
 
-header{
-    background: #e74c3c;
-    color: white;
+header {
+    background: #ff4d4d;
     padding: 15px;
+    color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.menu-page{
-    background: #f4d06f;
-    padding: 50px 20px;
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-.menu-title{
+.hero {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
+    padding: 60px;
+    background: url('images/restaurant.jpeg');
+    color: white;
 }
 
-.menu-layout{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 30px;
-    align-items: center;
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
-.menu-images{
+.menu {
+    padding: 40px;
+    text-align: center;
+}
+
+.menu-container {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.menu-images img{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid #fff;
-}
-
-.menu-list{
-    background: #fff3d6;
-    padding: 30px;
+.menu-card {
+    background: white;
+    padding: 15px;
+    width: 220px;
     border-radius: 10px;
 }
 
-.menu-group{
-    margin-bottom: 25px;
+.menu-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
 }
 
-.menu-group p{
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    margin: 8px 0;
+.reviews {
+    padding: 40px;
+    background: #fff;
 }
 
-
-.menu-group span{
-    white-space: nowrap;
+.textarea {
+    width: 100%;
+    height: 80px;
 }
 
-.dots{
-    flex: 1;
-    border-radius: 2px dotted #555;
-    margin: 0 10px;
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
 }
