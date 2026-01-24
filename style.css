@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f8f8f8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #f6d365, #fda085);
 }
 
 header{
@@ -19,7 +19,7 @@ nav a{
 }
 
 .hero{
-    background: url('images/restaurant.jpeg') center/cover;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/054/611/336/small/wide-angle-foodgraphy-for-restaurant-with-copy-space-photo.jpg') center/cover;
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -86,3 +86,69 @@ nav a{
     margin: 0 10px;
 }
 
+.category-slider{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.category{
+    text-align: center;
+    cursor: pointer;
+}
+
+.category img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    border: 3px solid #ff4d4d;
+}
+
+.category img:hover{
+    transform: scale(1.1);
+}
+
+.menu-card{
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10pz 30px rgba(0,0,0,0.2);
+}
+
+.menu-card h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px dashed gray;
+    align-items: center;
+}
+
+.price{
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.menu-item button{
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    background: rgba(255,77,77,0.1);
+    transform: scale(1.02);
+    transition: 0.3s;
+}
