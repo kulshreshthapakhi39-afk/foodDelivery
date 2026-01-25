@@ -1,106 +1,130 @@
 <!DOCTYPE html>
-<htmml>
-    <head>
-        <title>FOODIE EXPRESS</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<html>
 
-        <header>
-            <h1>FoodieExpress</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">contact</a>
-            </nav>
-        </header>
-        <section class="hero">
-            <h2>Delivery Food, Delivery Fast</h2>
-            <p>order Your Favourite Food anytime, anywhere</p>
-        </section>
-        <section class="menu-page">
-            <h2 class="menu-title">Restaurant Menu</h2>
-            <div class="menu-layout">
-                <div class="menu-images">
-                    <img src="images/plain dosa.jpeg">
-                    <img src="images/Masala dosa.jpeg">
-                    <img src="images/chole bhature.jpeg">
-                    <img src="images/Burger.jpeg">
-                    <img src="images/Pizza.jpeg">
-                    <img src="images/Coffee.jpeg">
-                    <img src="images/IceCream.jpeg">
-                </div>
-                <div class="menu-list">
-                    <div class="menu-group">
-                        <p><span>Plain Dosa</span><span class= "dots"></span><span>₹70</span></p>
-                        <p><span>Masala Dosa</span><span class= "dots"></span><span>₹90</span></p>
-                        <p><span>Chole Bhatrure</span><span class= "dots"></span><span>₹100</span></p>
-                        <p><span>Burger</span><span class= "dots"></span><span>₹70</span></p>
-                        <p><span>Pizza</span><span class= "dots"></span><span>₹120</span></p>
-                    </div>
+<head>
+    <title>FOODIE EXPRESS</title>
+</head>
 
-                    <div class="menu-group">
-                        <p><span>Noodles</span><span class= "dots"></span><span>₹60</span></p>
-                        <p><span>Fries</span><span class= "dots"></span><span>₹80</span></p>
-                        <p><span>Momos</span><span class= "dots"></span><span>₹90</span></p>
-                        <p><span>Idli sambhar</span><span class= "dots"></span><span>₹170</span></p>
-                    </div>
-                    <div class="menu-group">
-                        <p><span>Coffee</span><span class= "dots"></span><span>₹90</span></p>
-                        <p><span>Milkshake</span><span class= "dots"></span><span>₹70</span></p>
-                        <p><span>Tea</span><span class= "dots"></span><span>₹50</span></p>
-                        <p><span>Juice</span><span class= "dots"></span><span>₹60</span></p>
-                        <p><span>Ice Cream</span><span class= "dots"></span><span>₹40</span></p>
-                    </div>
-                </div>
+<body>
+    <header>
+        <div class="navbar"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About US</a>
+            <a href="contact.html">Contact US</a>
+            <a href="#services">Services</a>
+            <button class="btn">Book a Table</button>
+        </nav>
+    </header>
 
-                <div class="menu-images">
-                    <img src="images/Fries.jpeg">
-                    <img src="images/Noodles.jpeg">
-                    <img src="images/Momos.jpeg">
-                    <img src="images/idli (1).jpeg">
-                    <img src="images/Tea.jpeg">
-                    <img src="images/MilkShake.jpeg">
-                    <img src="images/Juice.jpeg">
-                </div>
+    <section class="hero">
+        <span class="badge">Service Food Lovers Since 2026</span>
+        <h1>Savor Every Bite.<br>Savor Every Moment.</h1>
+        <p>Where Flavor, freshness and hospitality come together</p>
+        <button class="btn">Experience The flavor</button>
+
+        <div class="hero-images">
+            <img src="images/Masala dosa.jpeg">
+            <img src="images/Pizza.jpeg">
+            <img src="images/Juice.jpeg">
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <h2>About Us</h2>
+        <p>Our Achievements story stands as a testament to teamwork and passion.</p>
+        <a href="about.html" class="btn small">Read More</a>
+        <img src="images/Chef1.jpeg" class="about-img">
+        <div class="stats">
+            <div>
+                <h3>7+</h3>
+                <p>Years Experience</p>
             </div>
-        </section>
-        <section class="category-slider">
-            <div class="category">
-                <img src="images/Masala dosa.jpeg">
-                <p>Dosa</p>
+            <div>
+                <h3>30+</h3>
+                <p>Dishes</p>
             </div>
-            <div class="category">
-                <img src="images/Pizza.jpeg">
-                <p>Pizza</p>
+            <div>
+                <h3>500+</h3>
+                <p>Reviews</p>
             </div>
-            <div class="category">
-                <img src="images/Juice.jpeg">
-                <p>juice</p>
+            <div>
+                <h3>10k+</h3>
+                <p>Happy Customers</p>
             </div>
-            <div class="category">
-                <img src="images/Noodles.jpeg">
-                <p>Noodles</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Crafting Moments, Serving You</h2>
+        <div class="Service-grid">
+            <div class="card">
+                <img src="images/buffet.jpeg">
+                <h3>Buffet Servies</h3>
+                <p>Unlimited delicious dishes with premium services.</p>
+                <button class="btn small">Read More</button>
             </div>
-        </section>
-        <section class="menu-card">
-            <h2>Restaurant Menu</h2>
-            <div class="menu-items">
-                <span>Masala Dosa</span>
-                <span class="price">₹90</span>
-                <button onclick="addCart()">Add</button>
+
+            <div class="card">
+                <img src="images/Delivery.jpeg">
+                <h3>Food Delivery</h3>
+                <p>Fast, Secure & fresh food delivery to your door.</p>
+                <button class="btn-small">Read More</button>
             </div>
-            <div class="menu-items">
-                <span>Pizza</span>
-                <span class="price">₹150</span>
-                <button onclick="addCart()">Add</button>
+            <div class="card">
+                <img src="images/cafeteria.jpeg">
+                <h3>Cafeteria</h3>
+                <p>Relax & enjoy handcrafted meals.</p>
+                <button class="btn-small">Read More</button>
             </div>
-            <div class="menu-items">
-                <span>Juice</span>
-                <span class="price">₹90</span>
-                <button onclick="addCart()">Add</button>
-            </div>        
-        </section>
-        <script src="script.js"></script>
-    </body>
-</htmml>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <h2>Customers feedback</h2>
+        <div class="feedback-box">
+            <div class="review">
+                ******
+                <p>Best Food Experience ever. Loved it</p>
+                <h4>Cally Pink</h4>
+            </div>
+
+            <div class="review">
+                ******
+                <p>Outstanding Service & delicious food.</p>
+                <h4> Andrew Cox</h4>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div>
+            <h2>Order Now & Satisfy Your Cravings</h2>
+            <p>Delicious Food Just one click away.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <img src="images/Momos.jpeg">
+    </section>
+
+    <section class="team">
+        <h2>Get to Know Our Amazing Team</h2>
+        <div class="team-grid">
+            <div class="team-card"><img src="images/vikas khanna (1).jpeg">
+                <h4>Vikas Khanna</h4>
+            </div>
+            <div class="team-card"><img src="images/sanjeev.jpeg">
+                <h4>sanjeev Kapoor</h4>
+            </div>
+            <div class="team-card"><img src="images/kunal kapur.jpeg">
+                <h4>Kunal kapur</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <p>@ 2026 FOODIE EXPRESS. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
