@@ -112,6 +112,43 @@ body {
 
 .newsletter {
     background: linear-gradient(135deg, #ff4d30, #ff8a65);
+    color: white;
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.newsletter-box input{
+    padding: 12px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    background: #fff;
+}
+
+.cta img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+#scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ff4d30;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
 }
 
 .about-preview,
