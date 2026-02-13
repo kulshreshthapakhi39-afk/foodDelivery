@@ -117,7 +117,7 @@ body {
     padding: 70px 10%;
 }
 
-.newsletter-box input{
+.newsletter-box input {
     padding: 12px;
     width: 250px;
     border-radius: 30px;
@@ -125,7 +125,7 @@ body {
     outline: none;
 }
 
-.cta{
+.cta {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,12 +133,12 @@ body {
     background: #fff;
 }
 
-.cta img{
+.cta img {
     width: 350px;
     border-radius: 20px;
 }
 
-#scrollTop{
+#scrollTop {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -194,4 +194,68 @@ body {
     padding: 20px;
     background: #26223a;
     margin-top: 40px;
+}
+
+.offer {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: 200px;
+    right: 200px;
+}
+
+.offer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.offer-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.offer-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.offer-content.btn {
+    background: white;
+    color: #dd2476;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.offer-content.btn:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+@media(max-width:768px) {
+    .offer-content h2 {
+        font-size: 26px;
+    }
+
+    .offer-content p {
+        font-size: 16px;
+    }
 }
