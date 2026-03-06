@@ -315,7 +315,6 @@ body {
     transform: scale(1.1);
 }
 
-
 @media(max-width: 768px) {
     .app-content h2 {
         font-size: 28px;
